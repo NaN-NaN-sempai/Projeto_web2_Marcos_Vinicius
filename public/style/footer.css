@@ -1,0 +1,36 @@
+.footerHr {
+    margin-top: 220px;
+    border: 1px solid var(--secondTextColor);
+    background: var(--secondTextColor);
+}
+
+footer {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .subSections .title {
+    font-size: 20px;
+    color: var(--mainColor);
+    margin-bottom: 20px;
+}
+
+footer .subSections p {
+    color: var(--secondTextColor);
+    
+}
+
+footer .subSections .textList {
+    display: flex;
+    flex-direction: column;
+}
+footer .subSections .textList .listItem {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+footer .subSections .textList .listItem .listItemIcon {
+    margin-right: 10px;
+}

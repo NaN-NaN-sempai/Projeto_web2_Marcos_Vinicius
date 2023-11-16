@@ -1,0 +1,26 @@
+header {
+    background: var(--mainColor);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+header a {
+    color: var(--mainTextColor);
+    text-decoration: none;
+}   
+
+header .selection a {
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+header .selection a:nth-child(even){
+    color: var(--mainTextColor);
+}
+header .selection a:nth-child(odd), header .selection .search{
+    color: var(--secondTextColor);
+}

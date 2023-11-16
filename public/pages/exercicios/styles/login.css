@@ -1,0 +1,61 @@
+.section {
+    background: url(../imgs/loginbg.png);
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center; 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    --padding: 150px;
+    padding-top: calc(var(--padding) / 2);;
+    padding-bottom: var(--padding);
+}
+
+.loginBlock {
+    background: #f69c0b77;
+    width: fit-content;
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    backdrop-filter: blur(2px);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+
+    & * {
+        margin: 2px;
+    }
+
+    & .ipt {
+        display: flex;
+        flex-direction: column;
+
+        & .input {
+            padding: 10px;
+            width: 300px;
+            border: none;
+            border-radius: 5px;
+        }
+    }
+
+    & .submit {
+        font-size: 20px;
+        margin-top: 20px;
+        border: none;
+        padding: 5px;
+        background: #F69A0B;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+        transition: box-shadow .1s, background .1s;
+    }
+    & .submit:hover {
+        background: #ffb133;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.9);
+    }
+    & .submit:active {
+        background: #bc8326;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.9);
+    }
+}

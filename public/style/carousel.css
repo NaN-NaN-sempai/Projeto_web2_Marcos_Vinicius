@@ -1,0 +1,36 @@
+.carousel {
+    width: 100%;
+    height: 70%;
+    min-width: 462px;
+    overflow: hidden;
+    position: relative;
+}
+.carousel .moveCarousel {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    color: var(--secondTextColor); 
+    font-size: 30px;
+    -webkit-filter: drop-shadow( 0 0 5px black);
+    filter: drop-shadow(0 5px 5px black);
+    z-index: 2;
+}
+.carousel .moveCarousel.left {
+    left: 20px;
+}
+.carousel .moveCarousel.right {
+    right: 20px;
+}
+.carousel .carouselBackground .move {
+    width: 100%;
+    position: absolute;
+}
+.carousel .carouselBackground .move a {   
+    width: 100%;
+    position: absolute;
+    transition: opacity 1s;
+}
+.carousel .carouselBackground .move img {
+    width: 100%;
+    float: left;
+}

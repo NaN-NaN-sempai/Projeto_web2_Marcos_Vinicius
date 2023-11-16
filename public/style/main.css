@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "Arbutus Slab";
+    src: url(../node_modules/@fontsource/arbutus-slab/files/arbutus-slab-all-400-normal.woff);
+}
+
+:root {
+    --bgDark: black;
+
+    --mainColor: #F69A0B;
+
+    --mainTextColor: black;
+    --secondTextColor: white;
+}
+
+* {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bgDark);
+}
+h1, p, span {
+    font-family: "Arbutus Slab";
+}
+
+
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: var(--mainColor) var(--bgDark);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--bgDark);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--mainColor);
+    border-radius: 10px;
+    border: 3px solid var(--bgDark);
+}
+
+/* Firefox */
+::-moz-selection { 
+    color: var(--secondTextColor);
+    background: var(--mainColor);
+}
+  
+/* Chrome, Edge, and Safari */
+::selection {
+    color: var(--secondTextColor);
+    background: var(--mainColor);
+}

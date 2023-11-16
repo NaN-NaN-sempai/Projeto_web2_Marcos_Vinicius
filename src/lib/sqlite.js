@@ -165,7 +165,7 @@ module.exports = class {
     registerExercise(exercise) {      
         return new Promise((resolve, reject) => {                
             // Consulta para verificar se o usuário já existe na tabela
-            this.db.get(`SELECT * FROM Treinos WHERE tipo = "${exercise.tipo}"`, (err, row) => {
+            this.db.get(`SELECT * FROM Treinos WHERE tipo = "${exercise.tipo}" AND nome = "${exercise.nome}"`, (err, row) => {
                 if (err) {
                     resolve(["erro", 'Erro ao verificar registro: ' + err.message]);
 
